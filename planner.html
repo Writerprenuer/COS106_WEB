@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner | Hiqmah Oyekola</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="planner.html">Academic Planner</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PAGE INTRODUCTION -->
+        <section class="planner-heading">
+            <h1>My Academic Planner</h1>
+            <p>
+                Plan your semester, organise your academic activities
+                and keep track of your learning goals.
+            </p>
+        </section>
+
+        <!-- TASK STATISTICS -->
+        <section class="task-section">
+            <h2>My Progress</h2>
+
+
+<div class="task-summary">
+
+    <div>
+        <h3 id="total-count">0</h3>
+        <p>Total Tasks</p>
+    </div>
+
+    <div>
+        <h3 id="pending-count">0</h3>
+        <p>Pending</p>
+    </div>
+
+    <div>
+        <h3 id="completed-count">0</h3>
+        <p>Completed</p>
+    </div>
+
+    <div>
+        <h3 id="completion-rate">0%</h3>
+        <p>Completion Rate</p>
+    </div>
+
+</div>
+
+            
+                <div>
+                    <h3 id="total-count">0</h3>
+                    <p>Total Tasks</p>
+                </div>
+
+                <div>
+                    <h3 id="pending-count">0</h3>
+                    <p>Pending</p>
+                </div>
+
+                <div>
+                    <h3 id="completed-count">0</h3>
+                    <p>Completed</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADD TASK SECTION -->
+        <section class="task-section">
+
+            <h2>Add a New Task</h2>
+
+            <form id="task-form">
+
+                <label for="task-input">Task Description</label>
+                <input
+                    type="text"
+                    id="task-input"
+                    placeholder="e.g. Complete Python assignment"
+                    required
+                >
+
+                <label for="task-course">Course / Module</label>
+                <input
+                    type="text"
+                    id="task-course"
+                    placeholder="e.g. Introduction to Data Science"
+                    required
+                >
+
+                <label for="task-date">Due Date</label>
+                <input
+                    type="date"
+                    id="task-date"
+                    required
+                >
+
+                <label for="task-priority">Priority</label>
+                <select id="task-priority" required>
+                    <option value="">Select priority</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+
+                <button type="submit">Add Task</button>
+
+            </form>
+
+        </section>
+
+        <!-- TASK LIST -->
+        <section class="task-section">
+
+            <h2>My Tasks</h2>
+
+            <p id="task-count">.</p>
+
+            <!-- TASK FILTERS -->
+            <div class="task-filters">
+                <button type="button" class="filter-btn" data-filter="all">
+                    All
+                </button>
+
+                <button type="button" class="filter-btn" data-filter="active">
+                    Active
+                </button>
+
+                <button type="button" class="filter-btn" data-filter="completed">
+                    Completed
+                </button>
+            </div>
+
+            <ul id="task-list"></ul>
+
+            <button type="button" id="clear-completed">
+                Clear Completed Tasks
+            </button>
+
+        </section>
+
+        <!-- WEEKLY STUDY SCHEDULE -->
+        <section class="schedule-section">
+
+            <h2>Weekly Study Schedule</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Activity</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Data Science</td>
+                        <td>2 Hours</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Programming Practice</td>
+                        <td>2 Hours</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Mathematics</td>
+                        <td>1 Hour</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Web Development</td>
+                        <td>2 Hours</td>
+                    </tr>
+
+                    <tr>
+                        <td>Friday</td>
+                        <td>Revision and Research</td>
+                        <td>2 Hours</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Hiqmah Oyekola. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

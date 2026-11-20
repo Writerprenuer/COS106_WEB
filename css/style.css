@@ -1,0 +1,688 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+body {
+    background-color: #D4AF37;
+    font-family: Arial, sans-serif;
+    color: #222222;
+    margin: 40px;
+}
+
+h1 {
+    color: #222222;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+h2 {
+    color: #222222;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.about-image img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 200px;
+        height: 240px;
+    }
+
+    body {
+        margin: 20px;
+    }
+
+}
+
+
+nav {
+    background-color: #222222;
+    padding: 18px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #D4AF37;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 80px auto;
+}
+
+.home-text {
+    flex: 1;
+}
+
+.home-text h1 {
+    text-align: left;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.home-text h2 {
+    font-size: 24px;
+}
+
+/* WELCOME TEXT */
+.welcome {
+    color: #222222;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+/* DISCOVER MORE BUTTON */
+.home-button {
+    display: inline-block;
+    background-color: #222222;
+    color: #FFFFFF;
+    padding: 14px 22px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.home-button:hover {
+    background-color: #FFFFFF;
+    color: #222222;
+}
+
+.home-image img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+@media (max-width: 600px) {
+
+    .home-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: 40px auto;
+    }
+
+    .home-text h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .home-image img {
+        width: 220px;
+        height: 260px;
+    }
+}
+
+
+
+/* =========================
+   PROJECTS PAGE
+========================= */
+
+.projects-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 50px auto 35px;
+}
+
+.projects-heading h1 {
+    color: #222222;
+}
+
+.projects-heading p {
+    line-height: 1.7;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.project-card {
+    background-color: #FFFFFF;
+    padding: 22px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h2 {
+    color: #222222;
+    font-size: 21px;
+}
+
+.project-card p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.project-image {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project-link {
+    display: inline-block;
+    color: #B38B1B;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #222222;
+    text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+    color: #555555;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    .project-card {
+        width: 100%;
+    }
+
+    .projects-heading {
+        margin: 30px 15px;
+    }
+
+    .projects-container {
+        padding: 0 15px;
+    }
+}
+
+
+
+/* =========================================
+   ACADEMIC PLANNER DESIGN
+========================================= */
+
+.planner-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 50px auto 35px;
+}
+
+.planner-heading h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.planner-heading p {
+    color: #333333;
+}
+
+/* WHITE CONTENT PANELS */
+
+.task-section,
+.schedule-section {
+    background-color: #FFFFFF;
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.task-section h2,
+.schedule-section h2 {
+    text-align: left;
+    margin-bottom: 22px;
+    color: #222222;
+}
+
+/* TASK PROGRESS SUMMARY */
+
+.task-summary {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    text-align: center;
+}
+
+.task-summary div {
+    flex: 1;
+    background-color: #F8F5EB;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.task-summary h3 {
+    color: #B38B1B;
+    font-size: 30px;
+    margin: 0;
+}
+
+.task-summary p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+/* TASK FORM */
+
+#task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#task-form label {
+    font-weight: bold;
+    margin-top: 8px;
+    color: #222222;
+}
+
+#task-form input,
+#task-form select {
+    padding: 13px;
+    border: 1px solid #DDDDDD;
+    border-radius: 7px;
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+}
+
+#task-form input:focus,
+#task-form select:focus {
+    outline: none;
+    border-color: #D4AF37;
+}
+
+/* BUTTONS */
+
+.task-section button {
+    padding: 11px 17px;
+    border: none;
+    border-radius: 7px;
+    background-color: #D4AF37;
+    color: #222222;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px 5px 5px 0;
+}
+
+.task-section button:hover {
+    background-color: #B38B1B;
+    color: #FFFFFF;
+}
+
+/* TASK FILTERS */
+
+.task-filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+/* TASK LIST */
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    background-color: #F8F7F2;
+    border: 1px solid #EEEEEE;
+    border-left: 4px solid #D4AF37;
+    border-radius: 9px;
+    padding: 18px;
+    margin-bottom: 15px;
+}
+
+#task-list li p {
+    margin: 7px 0;
+    font-size: 14px;
+}
+
+#task-list li strong {
+    font-size: 17px;
+    color: #222222;
+}
+
+/* CLEAR COMPLETED BUTTON */
+
+#clear-completed {
+    background-color: #222222;
+    color: #FFFFFF;
+}
+
+#clear-completed:hover {
+    background-color: #444444;
+}
+
+/* WEEKLY SCHEDULE TABLE */
+
+.schedule-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule-section th,
+.schedule-section td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.schedule-section th {
+    background-color: #222222;
+    color: #FFFFFF;
+}
+
+.schedule-section tr:hover {
+    background-color: #F8F5EB;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+
+    .planner-heading {
+        margin: 30px 15px;
+    }
+
+    .planner-heading h1 {
+        font-size: 28px;
+    }
+
+    .task-section,
+    .schedule-section {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+
+    .task-summary {
+        flex-direction: column;
+    }
+
+    .schedule-section {
+        overflow-x: auto;
+    }
+
+    .schedule-section table {
+        min-width: 450px;
+    }
+}
+
+/* END OF ACADEMIC PLANNER DESIGN */
+
+
+/* TASK PRIORITY LABELS */
+
+.priority-label {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px !important;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.priority-high {
+    background-color: #FCE4E4;
+    color: #A32121;
+}
+
+.priority-medium {
+    background-color: #FFF1CC;
+    color: #8A6100;
+}
+
+.priority-low {
+    background-color: #DFF3E4;
+    color: #236B38;
+}
+
+/* LEARNING VIDEO SECTION */
+.learning-video {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.learning-video h2 {
+    color: #B38B1B;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.learning-video h3 {
+    color: #222222;
+    margin-bottom: 15px;
+}
+
+.learning-video p {
+    color: #444444;
+    max-width: 750px;
+    margin: 15px auto;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-top: 25px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+/* ABOUT PAGE DETAILS */
+.about-details {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+.about-details h2 {
+    color: #B38B1B;
+    margin-top: 30px;
+    border-bottom: 2px solid #D4AF37;
+    padding-bottom: 8px;
+}
+
+.about-details p,
+.about-details li {
+    line-height: 1.8;
+    color: #333333;
+}
+
+.about-details ul {
+    padding-left: 25px;
+}
+
+/* CONTACT PAGE */
+
+.contact-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 50px auto 35px;
+}
+
+.contact-heading h1 {
+    color: #222222;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto 60px;
+    align-items: stretch;
+}
+
+.contact-info,
+.contact-form-container {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.contact-info h2,
+.contact-form-container h2 {
+    color: #222222;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.contact-info a {
+    color: #8A6500;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-container label {
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #222222;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.contact-form-container textarea {
+    resize: vertical;
+}
+
+.contact-form-container button {
+    background-color: #222222;
+    color: #FFFFFF;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form-container button:hover {
+    background-color: #B38B1B;
+}
+
+#contact-feedback {
+    margin-top: 15px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 700px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        margin: 20px auto 40px;
+    }
+
+    .contact-info,
+    .contact-form-container {
+        padding: 22px;
+    }
+
+    .contact-heading {
+        margin: 35px 15px;
+    }
+}
